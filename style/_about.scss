@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+    &-data {
+        display: flex;
+        gap: 10px;
+        max-width: 400px;
+        flex-direction: column;
+
+        h2 {
+            color: $white-color;
+        }
+    }
+
+
+    &-image {
+        img {
+            width: 280px;
+        }
+    }
+}

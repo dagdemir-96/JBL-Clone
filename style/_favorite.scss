@@ -1,0 +1,43 @@
+.favorite {
+    text-align: center;
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 200px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    scale: 1.2;
+                }
+            }
+
+            span {
+                cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    color: $first-color;
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

@@ -1,0 +1,153 @@
+@media(max-width:1200px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+
+    &-data {
+      max-width: unset !important;
+
+    }
+  }
+}
+
+@media(max-width:800px) {
+
+
+  #menu-btn {
+    display: block !important;
+  }
+
+  .nav-list {
+    display: none !important;
+  }
+  header {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.2px);
+    -webkit-backdrop-filter: blur(11.2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+
+  .nav-list.open {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 90px !important;
+    right: 3%;
+    padding: 20px;
+    /* From https://css.glass */
+    background: $body-color;
+    border-radius: 16px;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.278);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  .home-left-social {
+    margin-top: 100px;
+  }
+  .sponsor-container{
+    justify-self: center;
+  }
+  .footer-form{
+    flex-direction: column;
+    float: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .favorite-container {
+    flex-direction: column;
+  }
+ 
+  
+}
+
+
+@media (min-width: 768px) {
+  .home {
+    &-center {
+      &-image {
+        width: 320px !important;
+      }
+
+      &-title {
+        font-size: 256px !important;
+        top: -50px !important;
+      }
+    }
+
+    &-left {
+      span {
+        font-size: $normal-font-size !important;
+
+        &::after {
+          width: 80px !important;
+          left: 80px;
+        }
+      }
+
+      &-social {
+        margin-top: 30px;
+
+        a {
+          font-size: 25px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+
+  // Home
+  .home {
+    &-center {
+      &-image {
+        width: 400px !important;
+      }
+
+      &-title {
+        font-size: 300px !important;
+        top: -80px !important;
+      }
+    }
+  }
+
+
+
+/* model */
+.model {
+  &-image {
+    width: 600px !important;
+  }
+  &-tooltip {
+    &-text {
+      font-size: $normal-font-size !important;
+    }
+
+    &-1 {
+      top: 200px !important;
+      left: 200px !important;
+    }
+    &-3 {
+      left: 400px !important;
+      bottom: 150px !important;
+    }
+    &-4 {
+      left: 120px !important;
+    }
+  }
+}
+}
+
+
+
+
+/* sponsor kısmı küçük ekranlarda ordata hizalanmıyor bakılacak */
+/* abaut da büyük ekranlarda h2 ortada yer alıyor sola doğru olmalı */
